@@ -731,7 +731,7 @@ content_df = pd.DataFrame(content_results)
 best_content = content_df.loc[content_df['recall@10'].idxmax()]
 print(f'\nЛучшая размерность для Content-Only: {best_content['dimension']}')
 print(f'Recall@10: {best_content['recall@10']:.4f}')
-print(f'Precision@10: {besct_ontent['precision@10']:.4f}')
+print(f'Precision@10: {best_content['precision@10']:.4f}')
 print(f'NDCG@10: {best_content['ndcg@10']:.4f}')
 
 
